@@ -24,6 +24,7 @@ public class InstallMobileApp extends UiAutomatorTestCase{
 		// Find scroll object
 		UiScrollable appViews = new UiScrollable(new UiSelector().scrollable(true));
 		appViews.setAsHorizontalList();
+		appViews.scrollToBeginning(5);
 		
 		// Find Play Store and launch it
 		UiObject playstore=appViews.getChildByText(new UiSelector().className("android.widget.TextView"), "Play Store");
@@ -40,7 +41,7 @@ public class InstallMobileApp extends UiAutomatorTestCase{
 		//Select mobile security & antivirus
 		UiObject app = new UiObject(
 		new UiSelector().text("Mobile Security & Antivirus").resourceId("com.android.vending:id/li_title"));
-		sleep(1000);
+		sleep(3000);
 		assertTrue("mobile security & antivirus app not found", app.exists());
 		app.clickAndWaitForNewWindow();
 		

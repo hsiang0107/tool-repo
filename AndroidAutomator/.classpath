@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Android/android-sdk/platforms/android-21/android.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Android/android-sdk/platforms/android-21/uiautomator.jar"/>
+	<classpathentry kind="lib" path="D:/tools/eclipse-jee-luna-R-win32-x86_64/eclipse/plugins/org.junit_4.11.0.v201303080030/junit.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

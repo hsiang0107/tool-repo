@@ -1,0 +1,70 @@
+1. Install python (3.3 above)
+2. sudo pip install virtualenv
+3. Create virtual environment for flask
+    3.1) mkdir flaskenv
+    3.2) cd flaskenv
+    3.3) virtualenv flaskenv
+4. Activate flask virtual environment
+    OS X or Linux:
+        flaskenv/bin/activate
+    Windows:
+        flaskenv\scripts\activate
+5. Install flask framework
+    sudo pip install Flask
+6. Go to root of Avast_bkend
+7. Initial database
+    python init_db.py
+8. Launch the backend service
+    python avt_bkend.py
+9. Import the SOAP UI project in test directory (REST-for-AvastHW-soapui-project.xml) to send REST request:
+    http GET: http://127.0.0.1:5000
+    Response: list of available items(with id and title)in json
+    EX:
+    {"items": [
+    {
+      "id": 6,
+      "title": "sean"
+    },
+      {
+      "id": 5,
+      "title": "sean"
+    }
+    ]}
+
+   http POST: http://127.0.0.1:5000/add
+   Request json:
+   EX: (id is automatically generated)
+   {
+	"title": "sean"
+   }
+   Response json:
+   EX:
+    {"items": [
+      {
+      "id": 7,
+      "title": "sean"
+   },
+      {
+      "id": 6,
+      "title": "sean"
+   },
+      {
+      "id": 5,
+      "title": "sean"
+   }
+   ]}
+
+   http DELETE: http://127.0.0.1:5000/add/5
+   Response json:
+   EX:
+   {"items": [
+      {
+      "id": 7,
+      "title": "sean"
+   },
+      {
+      "id": 6,
+      "title": "sean"
+   }
+   ]}
+

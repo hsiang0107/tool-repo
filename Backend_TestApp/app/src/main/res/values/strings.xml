@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Backend_TestApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="tapme">Show entries</string>
+    <string name="hello_world">Flask backend test app</string>
+    <string name="add_entry">ADD ENTRY</string>
+    <string name="delete_entry">DELETE ENTRY</string>
+    <string name="title_label">Title to add:</string>
+    <string name="id_label">ID to delete:</string>
+</resources>
